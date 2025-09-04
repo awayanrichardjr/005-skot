@@ -1,0 +1,83 @@
+.navigation {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 1rem;
+}
+
+.navigation :where(.search-bar) {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+
+  width: fit-content;
+}
+/* form */
+.navigation :where(.search-bar) form {
+  display: flex;
+  align-items: center;
+
+  width: fit-content;
+  border-radius: 2rem;
+  background-color: var(--black);
+
+  width: 2.5rem;
+  overflow: hidden;
+  transition: 0.5s;
+}
+.navigation :where(.search-bar) span {
+  background-color: var(--black);
+  border-radius: 50%;
+  padding: 0.5rem;
+
+  cursor: pointer;
+  color: var(--white);
+}
+.navigation :where(.search-bar) input {
+  border: none;
+  background-color: var(--black);
+  border-radius: 2rem;
+  padding: 0.5rem;
+
+  color: white;
+}
+
+/* links */
+.navigation :where(.links) {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: start;
+}
+
+.navigation :where(.links) a {
+  color: var(--black);
+  transition: 0.3s;
+  padding: 1rem 2rem;
+}
+.navigation :where(.links) a:hover {
+  color: var(--subject);
+}
+
+/* home app logo */
+.navigation :where(.home-app-logo) {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.navigation :where(.home-app-logo) a {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  gap: 0.3rem;
+  span {
+    color: var(--subject);
+    font-variation-settings: "FILL" 1;
+  }
+  p {
+    color: var(--black);
+    font-weight: 600;
+  }
+}
