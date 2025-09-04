@@ -44,7 +44,31 @@ function Navigation() {
             </a>
           </li>
         </ul>
-        <ul className="darkmode"></ul>
+        <ul className="darkmode">
+          <li>
+            <button className="darkmode-btn">
+              <span className="material-symbols-rounded">dark_mode</span>
+            </button>
+          </li>
+        </ul>
+        <ul className="contact">
+          <li>
+            <a href="#">Contact us</a>
+          </li>
+          <li>
+            <a href="#">
+              <span className="material-symbols-rounded">call</span>
+            </a>
+          </li>
+        </ul>
+        <ul className="cart">
+          <li>
+            <a href="#">
+              <p>Cart</p>
+              <span className="material-symbols-rounded">shopping_basket</span>
+            </a>
+          </li>
+        </ul>
       </nav>
     </div>
   );
