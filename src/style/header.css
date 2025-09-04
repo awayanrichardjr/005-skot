@@ -1,0 +1,123 @@
+.header {
+  position: relative;
+  background-color: var(--grey);
+  position: relative;
+  height: 70vh;
+  overflow: hidden;
+  margin: 1rem;
+  border-radius: 2rem;
+}
+.header :where(.container) {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+.header :where(.heading1) {
+  font-size: 64px;
+  font-weight: normal;
+  background-color: white;
+  width: 75vw;
+  padding-bottom: 1rem;
+  border-bottom-right-radius: 2rem;
+  position: relative;
+}
+.header :where(.heading1)::after {
+  content: "";
+  position: absolute;
+  bottom: -100px;
+  left: 0;
+  z-index: 1;
+
+  aspect-ratio: 1/1;
+  width: 100px;
+  background-color: transparent;
+  border-top-left-radius: 2rem;
+  box-shadow: -10px -10px 0 white;
+}
+.header :where(.container) p {
+  background-color: white;
+  height: 100px;
+  flex-grow: 1;
+  position: relative;
+}
+.header :where(.container) p::after {
+  content: "";
+  position: absolute;
+  aspect-ratio: 1/1;
+  width: 40px;
+  bottom: -40px;
+  left: 0;
+
+  background-color: transparent;
+  border-top-left-radius: 2rem;
+  box-shadow: -10px -10px 0 white;
+}
+.header :where(.container) p::before {
+  content: "";
+  position: absolute;
+  aspect-ratio: 1/1;
+  width: 40px;
+  bottom: -40px;
+  right: 0;
+
+  background-color: transparent;
+  border-top-right-radius: 2rem;
+  box-shadow: 10px -10px 0 white;
+}
+
+.header :where(.description) {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+
+  width: 200px;
+  padding: 1rem;
+  border-top-right-radius: 2rem;
+  background-color: white;
+}
+.header :where(.description)::after {
+  content: "";
+  position: absolute;
+  aspect-ratio: 1/1;
+  width: 40px;
+  top: -40px;
+  left: 0;
+
+  background-color: transparent;
+  border-bottom-left-radius: 2rem;
+  box-shadow: -10px 10px 0 white;
+}
+.header :where(.description)::before {
+  content: "";
+  position: absolute;
+  aspect-ratio: 1/1;
+  width: 40px;
+  bottom: 0;
+  right: -40px;
+
+  background-color: transparent;
+  border-bottom-left-radius: 2rem;
+  box-shadow: -10px 10px 0 white;
+}
+
+.header :where(.c45) {
+  font-weight: normal;
+}
+.header :where(.typeee) {
+  font-size: 12px;
+  color: grey;
+}
+
+.header :where(picture) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header :is(img) {
+  aspect-ratio: 1/1;
+  width: 750px;
+  bottom: -200px;
+  z-index: -1.1;
+  position: absolute;
+}
