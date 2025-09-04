@@ -9,33 +9,25 @@ function Navigation() {
   return (
     <div>
       <nav className="navigation">
-        <ul className="search-bar">
-          <li>
-            <form action="" id="search-form">
-              <span
-                onClick={OpenSearchBar}
-                className="material-symbols-rounded"
-              >
-                search
-              </span>
-              <input type="search" placeholder="Search..." />
-            </form>
+        {/* links */}
+        <ul className="links-list">
+          <li className="search-bar">
+            <span className="material-symbols-rounded">search</span>
+            <input
+              type="search"
+              name="search"
+              id="search"
+              placeholder="Search..."
+            />
           </li>
-        </ul>
-        <ul className="links">
-          <li>
+          <li className="links">
             <a href="#">About</a>
-          </li>
-          <li>
             <a href="#">Collections</a>
-          </li>
-          <li>
             <a href="#">Services</a>
-          </li>
-          <li>
             <a href="#">Options</a>
           </li>
         </ul>
+        {/* logo */}
         <ul className="home-app-logo">
           <li>
             <a href="#">
@@ -44,25 +36,20 @@ function Navigation() {
             </a>
           </li>
         </ul>
-        <ul className="darkmode">
+        {/* actions */}
+        <ul className="actions-list">
           <li>
-            <button className="darkmode-btn">
+            <button className="darkmode">
               <span className="material-symbols-rounded">dark_mode</span>
             </button>
           </li>
-        </ul>
-        <ul className="contact">
-          <li>
-            <a href="#">Contact us</a>
-          </li>
-          <li>
+          <li className="contact">
             <a href="#">
+              <p>Contact</p>
               <span className="material-symbols-rounded">call</span>
             </a>
           </li>
-        </ul>
-        <ul className="cart">
-          <li>
+          <li className="cart">
             <a href="#">
               <p>Cart</p>
               <span className="material-symbols-rounded">shopping_basket</span>
