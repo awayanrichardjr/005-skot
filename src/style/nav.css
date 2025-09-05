@@ -162,10 +162,13 @@
 
   .navigation :where(.home-app-logo) {
     padding: 0;
-    margin-left: 10rem;
+    /* margin-left: 10rem; */
   }
 
   .navigation :where(.links-list) .menu {
     display: block;
   }
+}
+
+@media screen and (max-width: 1024px) {
 }

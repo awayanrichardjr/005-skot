@@ -120,4 +120,12 @@
   bottom: -200px;
   z-index: -1.1;
   position: absolute;
+
+  transition: 1s;
+}
+
+@media screen and (max-width: 1024px) {
+  .header :is(img) {
+    margin-left: 6rem;
+  }
 }
