@@ -5,6 +5,16 @@ function OpenSearchBar() {
   searchBar.style.width = "100%";
 }
 
+function OpenMenuLinks() {
+  const menuLinks = document.getElementById("menu-links");
+  menuLinks.style.display = "flex";
+  menuLinks.style.flexFlow = "column nowrap";
+}
+function CloseMenuLinks() {
+  const menuLinks = document.getElementById("menu-links");
+  menuLinks.style.display = "none";
+}
+
 function Navigation() {
   return (
     <nav className="navigation">
@@ -24,6 +34,21 @@ function Navigation() {
           <a href="#">Collections</a>
           <a href="#">Services</a>
           <a href="#">Options</a>
+        </li>
+        <li className="menu">
+          <span onClick={OpenMenuLinks} className="material-symbols-rounded">
+            more_vert
+          </span>
+
+          <div className="menu-links" id="menu-links">
+            <span onClick={CloseMenuLinks} className="material-symbols-rounded">
+              close
+            </span>
+            <a href="#">About</a>
+            <a href="#">Collections</a>
+            <a href="#">Services</a>
+            <a href="#">Options</a>
+          </div>
         </li>
       </ul>
       {/* logo */}
